@@ -1,0 +1,5 @@
+query GetPokemons {
+  pokemons(first: 10) {
+    ...PokemonFields
+  }
+}

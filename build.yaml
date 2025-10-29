@@ -1,0 +1,9 @@
+# build.yaml
+targets:
+  $default:
+    builders:
+      graphql_codegen:
+        options:
+          schema: lib/graphql/schema.graphql
+          queries_glob: lib/graphql/**/*.graphql
+          output: lib/graphql/graphql_api.dart
